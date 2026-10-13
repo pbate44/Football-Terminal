@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" role="img" aria-label="Cartoon tower crane lifting a football">
+  <defs>
+    <clipPath id="frame">
+      <rect width="640" height="300" rx="16"/>
+    </clipPath>
+    <pattern id="hazard" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="8" height="16" fill="#facc15"/>
+      <rect x="8" width="8" height="16" fill="#1f2937"/>
+    </pattern>
+    <style>
+      .ink { stroke: #1f2937; stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+      .thin { stroke: #1f2937; stroke-width: 2; fill: none; stroke-linejoin: round; stroke-linecap: round; }
+      .swing { transform-box: view-box; transform-origin: 425px 58px; animation: swing 3s ease-in-out infinite; }
+      @keyframes swing { 0%, 100% { transform: rotate(4deg); } 50% { transform: rotate(-4deg); } }
+      .cloud { animation: drift 12s ease-in-out infinite alternate; }
+      @keyframes drift { from { transform: translateX(0); } to { transform: translateX(30px); } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="640" height="300" fill="#bae6fd"/>
+
+    <g class="cloud" fill="#fff">
+      <ellipse cx="80" cy="120" rx="34" ry="14"/>
+      <ellipse cx="100" cy="110" rx="22" ry="14"/>
+      <ellipse cx="560" cy="110" rx="30" ry="12"/>
+      <ellipse cx="578" cy="101" rx="18" ry="12"/>
+    </g>
+
+    <!-- ground -->
+    <rect y="272" width="640" height="28" fill="#a16207"/>
+    <rect y="268" width="640" height="6" fill="#65a30d"/>
+
+    <!-- tie lines -->
+    <line x1="190" y1="8" x2="530" y2="36" class="thin"/>
+    <line x1="190" y1="8" x2="95" y2="40" class="thin"/>
+
+    <!-- mast -->
+    <rect x="178" y="60" width="24" height="192" fill="#facc15" class="ink"/>
+    <polyline points="178,80 202,100 178,120 202,140 178,160 202,180 178,200 202,220 178,240" class="thin"/>
+
+    <!-- base -->
+    <rect x="158" y="248" width="64" height="24" rx="3" fill="#9ca3af" class="ink"/>
+
+    <!-- peak -->
+    <polygon points="180,36 190,8 200,36" fill="#facc15" class="ink"/>
+
+    <!-- counter-jib + counterweight -->
+    <rect x="90" y="40" width="90" height="10" fill="#facc15" class="ink"/>
+    <rect x="98" y="50" width="42" height="24" rx="3" fill="#6b7280" class="ink"/>
+
+    <!-- jib -->
+    <rect x="190" y="36" width="350" height="14" fill="#facc15" class="ink"/>
+    <polyline points="205,50 220,36 235,50 250,36 265,50 280,36 295,50 310,36 325,50 340,36 355,50 370,36 385,50 400,36 415,50 430,36 445,50 460,36 475,50 490,36 505,50 520,36 535,50" class="thin"/>
+
+    <!-- cab with face -->
+    <rect x="165" y="50" width="50" height="30" rx="5" fill="#f97316" class="ink"/>
+    <rect x="172" y="56" width="36" height="16" rx="3" fill="#e0f2fe" class="ink"/>
+    <circle cx="183" cy="63" r="2.5" fill="#1f2937"/>
+    <circle cx="197" cy="63" r="2.5" fill="#1f2937"/>
+    <path d="M185 68 q5 3 10 0" class="thin"/>
+
+    <!-- trolley -->
+    <rect x="410" y="50" width="30" height="9" rx="2" fill="#6b7280" class="ink"/>
+
+    <!-- swinging cable, hook and football -->
+    <g class="swing">
+      <line x1="425" y1="58" x2="425" y2="186" class="thin"/>
+      <path d="M425 186 v8 a7 7 0 1 1 -10 5" class="ink" fill="none"/>
+      <circle cx="425" cy="222" r="22" fill="#fff" class="ink"/>
+      <polygon points="425,214 432.6,219.5 429.7,228.5 420.3,228.5 417.4,219.5" fill="#1f2937"/>
+      <path d="M425 214 V200 M432.6 219.5 L445.9 215.2 M429.7 228.5 L437.9 239.8 M420.3 228.5 L412.1 239.8 M417.4 219.5 L404.1 215.2" class="thin"/>
+    </g>
+
+    <!-- cones -->
+    <g class="ink">
+      <polygon points="286,272 300,236 314,272" fill="#f97316"/>
+      <polygon points="326,272 338,242 350,272" fill="#f97316"/>
+    </g>
+    <rect x="292" y="252" width="16" height="5" fill="#fff"/>
+    <rect x="331" y="256" width="14" height="4" fill="#fff"/>
+
+    <!-- barrier -->
+    <line x1="500" y1="250" x2="500" y2="272" class="ink"/>
+    <line x1="600" y1="250" x2="600" y2="272" class="ink"/>
+    <rect x="480" y="234" width="140" height="16" rx="2" fill="url(#hazard)" class="ink"/>
+  </g>
+</svg>
