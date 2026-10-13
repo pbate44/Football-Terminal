@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="frontend/public/logo.webp" alt="Football Dashboard logo" width="140" />
+  <img src="logo.webp" alt="Football Dashboard logo" width="140" />
 </p>
 
 <p align="center">
-  <img src="docs/assets/title.svg" alt="FOOTBALL TERMINAL" width="640" />
+  <img src="title.svg" alt="FOOTBALL TERMINAL" width="640" />
 </p>
 
 <p align="center">
@@ -32,5 +32,5 @@ data      ▸ API-Sports v3 (https://v3.football.api-sports.io)
 ```
 
 <p align="center">
-  <img src="docs/assets/crane.svg" alt="Cartoon crane lifting a football" width="640" />
+  <img src="crane.svg" alt="Cartoon crane lifting a football" width="640" />
 </p>
